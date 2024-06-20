@@ -8,16 +8,17 @@
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
-  <!-- Jean's Style Sheet -->
+  
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="candy">
     <div class="mainly">
@@ -34,17 +35,31 @@
         </div>
       </header>
       <main>
-
       <div class="note">You’ve used <span class="highlight">815 GB</span> of your storage</div>
 
       <div class="storage-graph">
-        <div class="storage-available">
-            <div class="storage-inuse">
+        <div class="storage-available" style="background-color: hsl(229, 57%, 11%);
+        border-radius: 20px;
+        margin: 15px 0 5px 0;
+        height: 20px;">
+            <div class="storage-inuse" style="background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+            border-radius: 20px;
+            height: 20px;
+            width: calc((815/1000)*100%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;">
               <div class="circle-indicator"></div>
             </div>
         </div>
         <div class="hide-bubble">
-          <div class="storage-left">
+          <div class="storage-left" style="
+            position: relative;
+            width: auto;
+          background: #f5f5f5;
+            border-radius: 10px 10px 0 10px;
+            padding: 20px;
+        ">
             <span class="storage-msg"> 185</span> GB LEFT
           </div>
         </div>
@@ -54,7 +69,6 @@
         <span class="zero-storage">0 GB</span> 
         <span class="max-storage">1000 GB</span> 
       </div>
-
     </main>
 </div>
 </div>
@@ -62,7 +76,7 @@
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/jeantiston">Jean Tiston</a>.
+      Coded by <a href="https://github.com/jeantiston">Abba Traore</a>.
     </div>
   </footer>
 

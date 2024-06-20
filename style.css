@@ -1,17 +1,5 @@
-body {
-    background-color: hsl(229, 57%, 11%);
-    background-image: url("images/bg-desktop.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center bottom;
-    font-family: 'Raleway', sans-serif;
-    color: hsl(229, 7%, 55%);
-
-}
-
-.highlight {
-    color: hsl(243, 100%, 93%);
-}
+/* only goal is to take some fo these and out 
+in body of html to use bootsrap*/
 
 .candy {
     display: flex;
@@ -20,20 +8,30 @@ body {
     justify-content: center;
     align-items: center;   
 }
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url('./images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: 100% 50%;
+    font-family: sans-serif;
+    color: hsl(229, 7%, 55%);
+}
+.highlight {
+    color: hsl(243, 100%, 93%);
+}
 
 .mainly {
     display: flex;
     min-width: 900px;
-    
 }
-
 header {
     flex: 1 1 auto;
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 70px 10px 10px;
     padding: 30px 120px 30px 30px;
     margin: 10px;
-    
 }
 
 .header-cont {
@@ -48,7 +46,6 @@ header {
 
 main {
     flex: 1 1 500px;
-    border: 5px solid goldenrod; 
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px 10px 10px 10px;
     padding: 30px 30px 30px 30px;
@@ -76,34 +73,16 @@ main {
 .storage-graph {
     position: relative; 
 }
-
-.storage-available {
+/* the code below is being used with bootsrap in html
+/*.storage-available {
     background-color: hsl(229, 57%, 11%);
     border-radius: 20px;
     margin: 15px 0 5px 0;
     height: 20px;
-}
-
-.hide-bubble {
-    display: none;
-}
+}*/
 
 .storage-available:hover + .hide {
     display: block;
-}
-
-.hide-bubble {
-    position: absolute;
-    left: 64%;
-    bottom: calc(100% + 30px);
-}
-
-.storage-left {
-    position: relative;
-    width: auto;
-	background: #f5f5f5;
-    border-radius: 10px 10px 0 10px;
-    padding: 20px;
 }
 
 .storage-left:after {
@@ -126,8 +105,8 @@ main {
     font-weight: 700;
     color: black;
 }
-
-.storage-inuse {
+/* below this code is being used with bootsrap in my html */
+/*.storage-inuse {
     background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border-radius: 20px;
     height: 20px;
@@ -136,7 +115,7 @@ main {
     align-items: center;
     justify-content: flex-end;
 }
-
+*/
 .circle-indicator {
     background-color: white;
     height: 15px;
@@ -147,9 +126,19 @@ main {
 
 .storage-highlight {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     
+}
 
+.max-storage {
+    display: flex;
+    justify-content: right;
+    margin-top: -20px;
+}
+.hide-bubble {
+    position: absolute;
+    left: 64%;
+    bottom: calc(100% + 30px);
 }
 
 footer {
@@ -179,5 +168,5 @@ footer {
         bottom: -110px;
         left: 30%;
     }
-  
   }
+  
